@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vareta</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+
+<header>
+  <h1>VARETA</h1>
+  <nav>
+    <a href="shop.html">Shop</a>
+    <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <video autoplay muted loop id="hero-video">
+    <source src="images/hero.mp4" type="video/mp4">
+  </video>
+  <div class="hero-text">
+    <h2>Redefining in Silence</h2>
+    <p>Move Quiet. Move Different.</p>
+    <div id="countdown"></div>
+    <a href="shop.html" class="btn">ENTER STORE</a>
+  </div>
+</section>
+
+<section class="featured-products">
+  <h3>Latest Drops</h3>
+  <div class="products">
+    <div class="card">
+      <img src="images/shadow-hoodie.jpg">
+      <h4>Shadow Hoodie</h4>
+      <p>$70</p>
+      <button onclick="addToCart('Shadow Hoodie',70)">Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="images/silence-tee.jpg">
+      <h4>Silence Tee</h4>
+      <p>$40</p>
+      <button onclick="addToCart('Silence Tee',40)">Add to Cart</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© Vareta — Built in Silence</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

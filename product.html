@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product - Vareta</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <a href="shop.html">← Back to Shop</a>
+  <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+</header>
+
+<section class="product-page">
+  <img src="images/shadow-hoodie.jpg" alt="Shadow Hoodie">
+  <div class="details">
+    <h2>Shadow Hoodie</h2>
+    <p>$70</p>
+    <label>Size:
+      <select id="size-shadow-single">
+        <option>S</option><option>M</option><option>L</option><option>XL</option>
+      </select>
+    </label>
+    <button onclick="addToCartVariant('Shadow Hoodie',70,'shadow-single')">Add to Cart</button>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

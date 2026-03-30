@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop - Vareta</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>SHOP</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+  </nav>
+</header>
+
+<section class="products">
+  <div class="card">
+    <img src="images/shadow-hoodie.jpg">
+    <h4>Shadow Hoodie</h4>
+    <p>$70</p>
+    <label>Size:
+      <select id="size-shadow">
+        <option>S</option><option>M</option><option>L</option><option>XL</option>
+      </select>
+    </label>
+    <button onclick="addToCartVariant('Shadow Hoodie',70,'shadow')">Add to Cart</button>
+  </div>
+
+  <div class="card">
+    <img src="images/silence-tee.jpg">
+    <h4>Silence Tee</h4>
+    <p>$40</p>
+    <label>Size:
+      <select id="size-silence">
+        <option>S</option><option>M</option><option>L</option><option>XL</option>
+      </select>
+    </label>
+    <button onclick="addToCartVariant('Silence Tee',40,'silence')">Add to Cart</button>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
