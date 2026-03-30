@@ -1,42 +1,60 @@
 body {
-  background: black;
-  color: white;
+  margin:0;
+  background:black;
+  color:white;
   font-family: Arial;
-  margin: 0;
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-}
-
-a {
-  color: white;
-  margin-left: 15px;
-  text-decoration: none;
+  display:flex;
+  justify-content:space-between;
+  padding:20px;
 }
 
 .hero {
-  text-align: center;
-  margin-top: 100px;
+  height:80vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.hero h2 {
+  font-size:50px;
 }
 
 .btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background: white;
-  color: black;
-  margin-top: 20px;
+  margin-top:20px;
+  padding:15px 30px;
+  background:white;
+  color:black;
+}
+
+.banner {
+  text-align:center;
+  padding:20px;
+  border-top:1px solid white;
+  border-bottom:1px solid white;
 }
 
 .products {
-  display: flex;
-  gap: 20px;
-  padding: 40px;
+  display:flex;
+  gap:20px;
+  padding:40px;
+  flex-wrap:wrap;
 }
 
 .card {
-  border: 1px solid white;
-  padding: 20px;
+  border:1px solid white;
+  padding:20px;
+  transition:0.3s;
+}
+
+.card:hover {
+  transform:scale(1.05);
+}
+
+img {
+  width:100%;
 }
