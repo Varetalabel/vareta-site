@@ -1,0 +1,42 @@
+body {
+  background: black;
+  color: white;
+  font-family: Arial;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: white;
+  color: black;
+  margin-top: 20px;
+}
+
+.products {
+  display: flex;
+  gap: 20px;
+  padding: 40px;
+}
+
+.card {
+  border: 1px solid white;
+  padding: 20px;
+}
